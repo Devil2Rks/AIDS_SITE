@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Doctors - Leelawati Nursing Home</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <header>
+        <h1>Meet Our Doctors</h1>
+    </header>
+    <main>
+        <section id="doctor-list">
+            <div class="doctor">
+                <img src="female doctor.jpg" alt="Doctor 1">
+                <h3>Dr. Aditi Sharma</h3>
+                <p>Experience: 20 years</p>
+                <button onclick="openAppointmentForm('Dr. A. K. Sharma')">Book Appointment</button>
+            </div>
+            <div class="doctor">
+                <img src="male doctor.jpg" alt="Doctor 2">
+                <h3>Dr. Himanshu Verma</h3>
+                <p>Experience: 15 years</p>
+                <button onclick="openAppointmentForm('Dr. S. K. Verma')">Book Appointment</button>
+            </div>
+            <!-- Add more doctors as needed -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Leelawati Nursing Home. All rights reserved.</p>
+    </footer>
+    <div id="appointment-form-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeAppointmentForm()">&times;</span>
+            <h2>Appointment Form</h2>
+            <form id="appointment-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <input type="hidden" id="doctor" name="doctor">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
